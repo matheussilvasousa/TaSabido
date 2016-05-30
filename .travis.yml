@@ -3,7 +3,7 @@ android:
   components:
     - platform-tools
     - build-tools-23.0.3
-		- android-15
-		- extra-android-m2repository
+    - android-15
+    - extra-android-m2repository
 script:
-	- ./gradlew build connectedCheck
+  - ./gradlew build connectedCheck
