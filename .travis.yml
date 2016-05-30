@@ -5,7 +5,7 @@ android:
 	components:
 		- platform-tools
 		- build-tools-23.0.3
-		- android-15
+		- android-23
 		- extra-android-m2repository
 	
 	script:
