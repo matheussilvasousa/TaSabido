@@ -1,12 +1,9 @@
 language: android
-
 android:
-
-	components:
-		- platform-tools
-		- build-tools-23.0.3
-		- android-23
+  components:
+    - platform-tools
+    - build-tools-23.0.3
+		- android-15
 		- extra-android-m2repository
-	
-	script:
-		- ./gradlew build connectedCheck
+script:
+	- ./gradlew build connectedCheck
