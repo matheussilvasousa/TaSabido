@@ -3,7 +3,7 @@ android:
   components:
     - platform-tools
     - build-tools-23.0.3
-    - android-23
+    - android-15
     - extra-android-m2repository
 before_install:
   # environment info
@@ -29,7 +29,6 @@ before_install:
   - gradle -v
 
   # newest android SDK
-  - wget http://dl.google.com/android/android-sdk_${ANDROID_SDK_VERSION}-linux.tgz
   - tar -zxf android-sdk_${ANDROID_SDK_VERSION}-linux.tgz
   - export ANDROID_HOME=`pwd`/android-sdk-linux
   - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
