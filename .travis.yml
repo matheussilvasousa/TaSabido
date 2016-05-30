@@ -5,5 +5,8 @@ android:
     - build-tools-23.0.3
     - android-15
     - extra-android-m2repository
+install:
+  - true
 script:
   - ./gradlew build connectedCheck
+  - TERM=dumb ./gradlew assembleDebug
