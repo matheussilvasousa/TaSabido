@@ -35,9 +35,10 @@ before_install:
   # For a full list, run `android list sdk -a --extended`
   - echo yes | android update sdk --filter platform-tools --no-ui --force > /dev/null
   - echo yes | android update sdk --all --filter build-tools-23.0.3 --no-ui --force > /dev/null
-  - echo yes | android update sdk --filter android-23 --no-ui --force > /dev/null
+  - echo yes | android update sdk --filter android-15 --no-ui --force > /dev/null
   - echo yes | android update sdk --filter extra-android-support --no-ui --force > /dev/null
   - echo yes | android update sdk --filter extra-android-m2repository --no-ui --force > /dev/null
 install:
   - true
-script: gradle check
+script: 
+  - ./gradlew build connectedCheck
